@@ -91,7 +91,7 @@ The Helm chart follows the standard structure:
 
 ## Using the Helm Chart
 1. Review values.yaml:
-The values.yaml file defines the default configuration for your HCP cluster. Carefully review the options and modify them according to your specific requirements. This file controls aspects like HCP version, resource allocation, network configuration, and more.
+The values.yaml file defines the default configuration for your HCP cluster. Carefully review the options and modify them according to your specific requirements. This file controls aspects like worker_count, CPU, Memory, and more.
 
 2. To customize the HCP cluster provisioning process, modify the following:
    - values.yaml: This is the primary file for overriding default settings. Adjust any configuration options as needed.
