@@ -1,0 +1,12 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: JobTemplate
+metadata:
+  name: provision_hcp
+  namespace: aap
+spec:
+  connection_secret: aap-gitops
+  credentials: [hcp-t2,infra-kubeconfig,Pull Secret]
+  inventory: Demo Inventory
+  name: hcp_gitops_template
+  playbook: hcp-install.yaml
+  project: HCP
