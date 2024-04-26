@@ -71,10 +71,9 @@ Prerequisites
       - Name: Provide a unique name for your application.
       - Project: Select the project where you want to deploy the application (optional, can be created during application creation).
       - Sync Policy: Choose the desired synchronization behavior (Automated, Manual, or Hook).
-        
-            - Automated: Argo CD automatically syncs and deploys changes from the Git repository.
-            - Manual: You initiate deployments by manually syncing the application.
-            - Hook: External triggers like CI/CD pipelines can initiate syncing.
+            1. Automated: Argo CD automatically syncs and deploys changes from the Git repository.
+            2. Manual: You initiate deployments by manually syncing the application.
+            3. Hook: External triggers like CI/CD pipelines can initiate syncing.
 5. Source Details:
    - Git Repository: Select the previously connected Git repository from the dropdown menu.
    - Path: Specify the path within your Git repository that points to the deployment manifest file(s) for this application. In our case it is "."
