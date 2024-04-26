@@ -1,0 +1,9 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: {{ .Values.name }}
+  namespace: aap
+  
+spec:
+  job_template_name: {{ .Values.job_template_name }}
+  tower_auth_secret: aap-gitops
