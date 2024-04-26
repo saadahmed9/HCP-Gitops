@@ -83,4 +83,16 @@ Prerequisites
 
 7. Leave the other fields blank and click the Create button to create the Argo CD application.
 
+## Helm Chart Structure:
+The Helm chart follows the standard structure:
+   - Chart.yaml: Contains the HCP chart definition files.
+   - templates: Contains the template files used for generating deployment manifests.
+   - values.yaml: The default configuration values for the HCP cluster.
 
+## Using the Helm Chart
+1. Review values.yaml:
+The values.yaml file defines the default configuration for your HCP cluster. Carefully review the options and modify them according to your specific requirements. This file controls aspects like HCP version, resource allocation, network configuration, and more.
+
+2. To customize the HCP cluster provisioning process, modify the following:
+   - values.yaml: This is the primary file for overriding default settings. Adjust any configuration options as needed.
+   - templates: For advanced customization, you can modify the template files within the templates directory.
